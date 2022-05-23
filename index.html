@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div action="" id="cadastro">
+            <h2 class="titulo">Cadastro do usuário</h2>
+            <div class="inputnome">
+                <label for="nome">Nome completo</label> 
+                <input type="text" class="nome" required>
+            </div>
+
+            <div class="inputemail">
+                <label for="email">E-mail</label> 
+                <input type="email" class="email" required>
+            </div>
+
+            <div class="inputtelefone">
+                <label for="telefone">Telefone (Opcional)</label> 
+                <input type="tel" class="telefone">
+            </div>
+
+            <div class="inputlogradouro">
+                <label for="logradouro">Logradouro</label> 
+                <input type="text" class="logradouro" required>
+            </div>
+
+            <div class="inputnumero">
+                <label for="numero">Número</label> 
+                <input type="number" class="numero" required>
+            </div>
+
+            <div class="inputbairro">
+                <label for="bairro">Bairro (Opcional)</label> 
+                <input type="text" class="bairro">
+            </div>
+
+            <div class="inputcidade">
+                <label for="cidade">Cidade</label> 
+                <input type="text" class="cidade" required>
+            </div>
+
+            <div class="inputestado">
+                <label for="estado">Estado</label> 
+                <select name="estado" id="estado" required>
+                    <option value="">-- selecione --</option>
+                    <option value="acre">AC</option>
+                    <option value="alaoas">AL</option>
+                    <option value="amapa">AP</option>
+                    <option value="amazonas">AM</option>
+                    <option value="bahia">BA</option>
+                    <option value="ceara">CE</option>
+                    <option value="distritofederal">DF</option>
+                    <option value="espiritosanto">ES</option>
+                    <option value="goias">GO</option>
+                    <option value="maranhao">MA</option>
+                    <option value="matogrosso">MT</option>
+                    <option value="matogrossosul">MS</option>
+                    <option value="minasgerais">MG</option> 
+                    <option value="para">PA</option>
+                    <option value="paraiba">PB</option>
+                    <option value="parana">PR</option>
+                    <option value="pernambuco">PE</option>
+                    <option value="piaui">PI</option>
+                    <option value="roraima">RR</option>
+                    <option value="rondonia">RO</option>
+                    <option value="riodejaneiro">RJ</option>
+                    <option value="riograndedonorte">RN</option>
+                    <option value="riograndedosul">RS</option>
+                    <option value="santacatarina">SC</option>
+                    <option value="saopaulo">SP</option>
+                    <option value="sergipe">SE</option>
+                    <option value="tocantins">TO</option>
+                </select> 
+            </div>
+
+            <div class="inputcep">
+                <label for="cep">CEP</label> 
+                <input type="number" class="CEP" required>
+            </div>
+
+            <div class="inputestadocivil">
+                <label for="estadocivil">Estado Civil</label> 
+                <select name="estadocivil" id="estadocivil" required>
+                    <option value="">-- selecione --</option>
+                    <option value="acre">Solteiro(a)</option>
+                    <option value="acre">Casado(a)</option>
+                    <option value="acre">Divorciado(a)</option>
+                    <option value="acre">Viúvo(a)</option>
+                    <option value="acre">Separado(a)</option>
+                </select>
+            </div>
+            
+            <div class="preferencia">
+                <label for="prefcontato">Preferência de contato</label>
+                <div class="radioemail">
+                    <input type="radio" value="email" name="contato" id="email"><label>E-Mail</label>
+                </div>
+                <div class="radiotel">
+                    <input type="radio" value="tel" name="contato" id="tel"><label>Telefone</label>
+                </div>
+            </div>
+
+            <div class ="termos">
+                <input type="checkbox" value="box" name="termo" id="termo"><label for="">Li e concordo</label>
+            </div>
+
+            <div class ="botoes">
+                <input type="reset" value="Reinicia" name="reinicia" id="reinicia">
+                <input type="submit" value="Enviar" name="envia" id="envia">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
